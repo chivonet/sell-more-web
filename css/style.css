@@ -33,7 +33,7 @@ header{
     z-index: 3;
 }
 
-header a.logo {
+header a.logo, footer a.logo {
     font-family: var(--font-headers);
     font-size: 2rem;
     font-weight: 300;
@@ -622,4 +622,32 @@ section.contact form input[type="checkbox"]:checked + span {
     background-image: url("../images/Checkmark.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+footer {
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+}
+
+footer div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div.container > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer div.container span{
+    font-size: 0.6875rem;
+    line-height: 1.5rem;
+    color: var(--color-grey);
+    margin-top: 6px;
+}
+
+footer div.container a:first-of-type {
+    margin-right: 25px;
 }
